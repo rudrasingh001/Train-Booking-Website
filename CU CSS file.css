@@ -1,0 +1,140 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body
+{
+background-color:rgb(248,248,255));
+background-image:url("9.jpg");url("15.jpg");
+background-blend-mode:lighten;
+font-family: sans-serif;	
+}
+.fixed-1
+{
+position:absolute;
+left:20px;
+top:0px;	
+}
+.fixed-2
+{
+position:absolute;
+left:1270px;
+top:12px;
+}
+.menu-bar
+{  
+   background: rgb(248, 248, 255);
+   text-align: center;	
+     z-index: 1;
+}
+.menu-bar ul 
+{
+	display: inline-flex;
+	list-style: none;
+	color: #00008B;
+	  z-index: 1;
+}
+.menu-bar ul li
+{
+	width: 120px;
+	margin: 10px;
+	padding: 12px;
+	  z-index: 1;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #00008B;
+}
+.active,.menu-bar ul li:hover
+{
+    background: #ADFF2F;
+    border-radius: 3px;
+	font-weight: bold;
+}	
+.menu-bar .fa
+{
+	margin-right: 2px;
+}
+.sub-menu-1
+{
+	display:none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+	display:block;
+	position:absolute;
+	background:rgb(248,248,255);
+	margin-top:15px;
+	margin-left:15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width:150px;
+	padding:10px;
+	border-bottom:1px dotted #ff6347;
+	background:transparent;
+	border-radius:0;
+	text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+	color:#00FFFF;
+}	
+.fa-angle-right
+{
+	float:right;
+}	
+.sub-menu-2
+{
+	display:none;
+}
+.hover-me:hover .sub-menu-2
+{
+	display:block;
+	position:absolute;
+	background:rgb(248,248,255);
+	margin-top:-40px;
+	margin-left:140px;
+}
+
+
+
+
+
+
+
+
+
+
+h1{font-size:70px;color:red;margin:50px 0px;}
+textarea{margin: 0px 0px 0px 100px;}
+input{margin: 0px 0px 0px 100px;}
+label{font-family:verdana; font-size:16px; color:#00008b;}
+tr{line-height:3;}
+h2{font-family:garamond; font-size:25px; color:#00008b;padding:15px;}
+h3{font-family:verdana; font-size:16px; margin: 0px 0px 0px 135px;padding:15px;}
+button{margin: 30px 0px 0px 160px}
+#form{position:fixed;left:850; top:230px;}
+#details{margin: 0px 0px 0px 50px;float:top-left;padding-bottom:15px;}
+p{margin: 0px 150px; font-size:20px; font-style:italic;}
+.box
+{
+	flex-basis: 31%;
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}

@@ -1,0 +1,151 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body
+{
+
+font-family: sans-serif;
+background-color:#FFF0F5;
+
+
+
+margin: 0px 40px 100px 70px;
+
+
+}
+.fixed-1
+{
+position:absolute;
+left:20px;
+top:0px;	
+}
+.fixed-2
+{
+position:absolute;
+left:1270px;
+top:12px;
+}
+.menu-bar
+{  
+   background: rgb(248, 248, 255);
+   text-align: center;	
+     z-index: 1;
+   margin-left:-70px;
+   margin-right:-40px;
+}
+.menu-bar ul 
+{
+	display: inline-flex;
+	list-style: none;
+	color: #00008B;
+	  z-index: 1;
+}
+.menu-bar ul li
+{
+	width: 120px;
+	margin: 10px;
+	padding: 12px;
+	  z-index: 1;
+	 
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #00008B;
+}
+.active,.menu-bar ul li:hover
+{
+    background: #ADFF2F;
+    border-radius: 3px;
+	font-weight: bold;
+}	
+.menu-bar .fa
+{
+	margin-right: 2px;
+}
+.sub-menu-1
+{
+	display:none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+	display:block;
+	position:absolute;
+	background:rgb(248,248,255);
+	margin-top:15px;
+	margin-left:15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width:150px;
+	padding:10px;
+	border-bottom:1px dotted #ff6347;
+	background:transparent;
+	border-radius:0;
+	text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+	color:#00FFFF;
+}	
+.fa-angle-right
+{
+	float:right;
+}	
+.sub-menu-2
+{
+	display:none;
+}
+.hover-me:hover .sub-menu-2
+{
+	display:block;
+	position:absolute;
+	background:rgb(248,248,255);
+	margin-top:-40px;
+	margin-left:140px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+table,th,td{border : solid 2px black;
+            border-collapse:collapse;
+            text-align:center; margin:0px 440px}
+table{margin:0px 0px 0px 450px;}
+td{color:black}
+th{background-color:yellow}
+h1{font-size:70px;color:red;margin:50px -20px; font-family:'Tangerine', serif;
+                                                  text-shadow: 4px 7px 4px #aaa;}
+h2{font-size:24px; color:#00008b; font-family:verdana; text-transform:uppercase;
+                                 font-family:'Trirong', serif; font-weight:bold;}
+#p1{margin-right:400px; margin-top:-15px; text-align:justify}
+#p2{margin-left:400px;margin-top:-25px; text-align:justify}
+
+.modify
+{
+	border-style:solid ;
+	border-width:5px ;
+	padding:5px;
+	border-radius: 15px 50px 800px 5px;
+	border-color:#00BFFF;
+}

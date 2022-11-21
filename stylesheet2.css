@@ -1,0 +1,143 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body
+{
+background-image: url(16.jpeg);
+background-blend-mode:lighten;
+font-family: sans-serif;
+	
+}
+.fixed-1
+{
+position:absolute;
+left:20px;
+top:0px;	
+}
+.fixed-2
+{
+position:absolute;
+left:1270px;
+top:12px;
+}
+.menu-bar
+{  
+   background: rgb(248, 248, 255);
+   text-align: center;	
+     z-index: 1;
+}
+.menu-bar ul 
+{
+	display: inline-flex;
+	list-style: none;
+	color: #00008B;
+	  z-index: 1;
+}
+.menu-bar ul li
+{
+	width: 120px;
+	margin: 10px;
+	padding: 12px;
+	  z-index: 1;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #00008B;
+}
+.active,.menu-bar ul li:hover
+{
+    background: #ADFF2F;
+    border-radius: 3px;
+	font-weight: bold;
+	
+}	
+.menu-bar .fa
+{
+	margin-right: 2px;
+}
+.sub-menu-1
+{
+	display:none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+	display:block;
+	position:absolute;
+	background:rgb(248,248,255);
+	margin-top:15px;
+	margin-left:15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width:150px;
+	padding:10px;
+	border-bottom:1px dotted #ff6347;
+	background:transparent;
+	border-radius:0;
+	text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+	color:#00FFFF;
+}	
+.fa-angle-right
+{
+	float:right;
+}	
+.sub-menu-2
+{
+	display:none;
+}
+.hover-me:hover .sub-menu-2
+{
+	display:block;
+	position:absolute;
+	background:rgb(248,248,255);
+	margin-top:-40px;
+	margin-left:140px;
+}
+
+
+
+
+
+table,tr,td{
+             border:solid 5px black;
+             font-style:italic;
+              height:50px;
+              margin:50px 50px 50px 50px;
+              font-size:28px;
+             margin-left:auto;
+             margin-right:auto;
+			 padding:4px 4px 4px 4px;
+ }
+h1{
+             text-align:center;
+             font-size:70px;
+			 padding-top:15px;
+			 font-family:"Sofia", sans-serif;
+			 font-weight:bold;
+			 text-shadow: 3px 3px 3px #ababab;
+}
+
+.styled-table 
+{
+	
+	box-shadow: 0 0 20px rgba(0,0,0,0.15);
+	
+}
+
+

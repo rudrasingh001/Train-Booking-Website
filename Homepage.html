@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+ <title>IRRS(INDIAN RAIL RESERVATION SYSTEM)</title>
+ <link rel="icon" href="logo.jpeg" type="image/x-icon">
+ <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="homepage.js">
+</script>
+
+
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&=Dancing+Script&display=swap" rel="stylesheet"">
+ </head>
+ <body>
+    
+    <div class="menu-bar">
+	 <img class="fixed-1" src="3.jpg" width="80" height="80">
+	 <img class="fixed-2" src="logo.jpeg" width="50" height="50">
+ <ul>
+ <li class="active"><a href="#"><i class="fa fa-home fa-fw fa-2x"></i>HOME</a></li>
+  <li><a href="#"><i class="fa fa-train fa-fw "></i>TRAINS</a>
+   <div class="sub-menu-1">
+    <ul>
+	   <li><a href="homepage.html">Book Ticket</a></li>
+	   <li class="hover-me"><a href="#">IRCTC Trains</a><i class="fa fa-angle-right"></i>
+	        <div class="sub-menu-2">
+             <ul>
+	           <li><a href="#">Group Booking</a></li>
+	           <li><a href="#">Travel Insurance Claim Process</a></li>
+	         </ul>
+            </div>	
+	   </li>
+	   <li class="hover-me"><a href="#">Cancel Ticket</a><i class="fa fa-angle-right"></i>
+	        <div class="sub-menu-2">
+             <ul>
+	          <li><a href="#">E-tickets</a></li>
+	          <li><a href="#">Counter Ticket</a></li>
+	         </ul>
+            </div>	
+	   </li>
+	   <li><a href="#">PNR Enquiry</a></li>
+	   <li><a href="#">Train Shedule</a></li>
+	   <li><a href="#">Track Your Train</a></li>
+	</ul>
+    </div>	
+  </li>
+   <li><a href="#"><i class="fa fa-sign-in fa-fw "></i>LOGIN</a>
+   <div class="sub-menu-1">
+    <ul>
+	   <li><a href="login.html">Login</a></li>
+	   <li><a href="#">Register</a></li>
+	</ul>
+    </div>	
+   </li>
+    <li><a href="#"><i class="fa fa-cutlery fa-fw "></i>MEALS</a>
+	<div class="sub-menu-1">
+    <ul>
+	   <li><a href="#">Order Food</a></li>
+	   <li><a href="meals.html">Standard Menu Rates</a></li>
+	</ul>
+    </div>	
+	</li>
+	 <li><a href="#"><i class="fa fa-suitcase fa-fw "></i>HOLIDAY PACKAGES</a>
+	 <div class="sub-menu-1">
+    <ul>
+	   <li><a href="#">Special Trains</a>
+	   <li class="hover-me"><a href="#">Packages</a><i class="fa fa-angle-right"></i>
+	     <div class="sub-menu-2">
+          <ul>
+	       <li><a href="tourist.html">Rail Tour Packages</a></li>
+	       <li><a href="national.html">Domestic Packages</a></li>
+	       <li><a href="international.html">International Packages</a></li>
+	      </ul>
+         </div>	
+	   </li>
+	   <li><a href="#">Stays</a></li>
+	</ul>
+    </div>	
+	 </li>
+	  <li><a href="#"><i class="fa fa-clone fa-fw "></i>SERVICES</a>
+	  <div class="sub-menu-1">
+    <ul>
+	   <li><a href="Services.html">Facilities</a></li>
+	   <li><a href="#">Mahila E-Haat</a></li>
+	   <li><a href="#">Rail Drishti</a></li>
+	   <li><a href="#">Deals on IIRS</a></li>
+	   <li><a href="#">Indian Railway Magzines</a></li>
+	   <li><a href="#">Railways Freight Buisness Portal</a></li>
+	</ul>
+    </div>	
+	  </li>
+	   <li><a href="#"><i class="fa fa-bell-o fa-fw "></i>ALERTS</a>
+	   <div class="sub-menu-1">
+    <ul>
+	   <li><a href="#">Alerts</a></li>
+	   <li><a href="#">Updates</a></li>
+	   <li><a href="#">General Info</a></li>
+	   <li><a href="#">Special Trains</a></li>
+	   <li><a href="#">Cancelled/Diverted Trains</a></li>
+	</ul>
+    </div>	
+	   </li>
+	    <li><a href="#"><i class="fa fa-phone "></i>CONTACT US</a>
+		<div class="sub-menu-1">
+    <ul>
+	   <li><a href="Contact Us.html">Contact Us</a></li>
+	</ul>
+    </div>	
+		</li>
+	  
+ </ul>	 
+    </div>
+
+
+
+
+ <div class="wrapper">
+    <h1>BOOK TICKET</h1>
+	<form method="POST">
+	    <div class="input-group">
+         <div class="input-box">		
+	      <div id="a">
+		                 <select id="c" class="name">
+						      <option value="" disabled selected hidden>&nbsp;FROM</option>
+							  <option>&nbsp;MUMBAI CENTRAL - MMCT</option>
+							  <option>&nbsp;DELHI - DLI</option>
+							  <option>&nbsp;LUCKNOW NR - LKO</option>
+							  <option>&nbsp;VARANASI JN - BSB</option>
+							  <option>&nbsp;KOTA JN - KOTA</option>
+							  <option>&nbsp;PUNE JN -PUNE</option>
+							  <option>&nbsp;JALANDHAR CANT - JRC</option>
+							  
+							 
+						 </select>
+						 <i class="fa fa-location-arrow icon"></i>
+	      </div>					 
+        </div>		
+		                        
+		<div class="input-box">
+        <input type="date" class="name" id="today"  >
+		<i class="fa fa-calendar icon" aria-hidden="true"></i>
+                                
+        </div>								
+	   </div>
+	   
+	    <div class="swap">
+		  <button  type="button" class="btn"  onclick="swapValues()" value="Swap"><i class="fa fa-exchange fa-rotate-90"
+                       		  style="font-size:15px;color:blue;"></i></button>
+	    </div>
+	   	
+	   
+       <div class="input-group">	   
+		<div class="input-box" >
+		  <div id="b" >
+		            
+		                 <select id="d" class="name">
+						      <option value="" disabled selected hidden>&nbsp;TO</option>
+							  <option>&nbsp;RAIPUR JN - R</option>
+							  <option>&nbsp;KOLKATA - KOAA</option>
+							  <option>&nbsp;LUCKNOW NR - LKO</option>
+							  <option>&nbsp;JAIPUR - JP</option>
+							  <option>&nbsp;MUMBAI CENTRAL - MMCT</option>
+							  <option>&nbsp;PRAYAGRAJ JN - PRYJ</option>
+							  <option>&nbsp;DELHI - DLI</option>
+							  
+						 
+						 </select>
+						 <i class="fa fa-map-marker icon"></i>
+		  </div>				 
+        </div>
+                                	
+		
+		<div class="input-box">
+		                 <select class="name">
+						      <option>&nbsp;All Classes</option>
+							  <option>&nbsp;Anubhuti Class (EA)</option>
+							  <option>&nbsp;AC First Class (1A)</option>
+							  <option>&nbsp;Exec. Chair Car (EC)</option>
+							  <option>&nbsp;AC 2 Tier (2A)</option>
+							  <option>&nbsp;First Class (FC)</option>
+							  <option>&nbsp;AC 3 Tier (3A)</option>
+							  <option>&nbsp;AC 3 Economy (3E)</option>
+							  <option>&nbsp;AC Chair Car (CC)</option>
+							  <option>&nbsp;Sleeper (SL)</option>
+							  <option>&nbsp;Second Sitting (2S)</option>
+							  
+						 </select>
+						  <i class="fa fa-briefcase icon"></i>
+        </div>
+      </div>		
+	  <div class="input-group">	                       
+		<div class="input-box">
+		                 <select class="general">
+						      <option>&nbsp;GENERAL</option>
+							  <option>&nbsp;LADIES</option>
+							  <option>&nbsp;L.BERTH/SENIOR.CITIZEN</option>
+							  <option>&nbsp;DIVYAANG</option>
+							  <option>&nbsp;TATKAL</option>
+							  <option>&nbsp;PREMIUM TATKAL</option>
+							
+						 </select>
+						 <i class="fa fa-th-large icon"></i>
+        </div>								
+	  </div>							
+	 
+     <div class="input-group">	 
+      <div class="input-box">
+	  	<label class="container">			
+		<input type="checkbox" ><span class="check"><b>&nbsp;&nbsp;Divyang Concession&nbsp;<b></span>
+		</label>
+		<label class="container">
+		<input type="checkbox"  ><span class="check"><b>&nbsp;&nbsp;Flexible With Date</b></span>
+		</label>
+	  </div>
+     </div>
+
+     <div class="input-group">	 
+      <div class="input-box">
+         <label class="container">	  
+		<input type="checkbox"  ><span class="check"><b>&nbsp;&nbsp;Trains With Available Berth</b></span>
+		</label>
+	  </div>
+     </div>	 
+		
+	  <div class="input-group">
+	   <div class="input-box">
+	     <a href="trains.html">
+		<button type="button" class="search-btn" >Search Trains </button> 
+	   </a>
+	   </div>
+	  </div> 
+	</form>	    
+ </div> 
+
+  <section class="holidays">
+        
+  <h1>HOLIDAYS</h1>
+  
+  <div class="row">
+     <div class="info">
+	   <img src="0006.jpg">
+	    <h2>Rail Tour Packages</h2>
+		<p>IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing 
+		   and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok
+		   or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc.
+		   Holiday packages/ Land packages to these destinations are also available.<br>
+		   <a href="tourist.html"><b>Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></b></a></p>
+     </div>
+     <div class="info">
+	  <img src="27.jpg">
+	    <h2>International Packages</h2>
+		<p>Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai,
+		Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc.
+		The packages are inclusive of sightseeing, meals, visa charges and overseas medical 
+		insurance to give you a hassle-free and memorable experience.<br>
+		<a href="international.html"><b>Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></b></a></p>
+      </div>
+     <div class="info">
+	  <img src="4.jpg">
+	    <h2>Domestic Packages</h2>
+		<p>Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno 
+		Devi or the leisure traveller wanting to relish the Blue mountains of North East, 
+		Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or 
+		Picturesque Islands, IRCTC has it all. Discover India through IRCTC!<br>
+		<a href="national.html"><b>Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></b></a></p>
+      </div>
+    </div>  
+  </section>
+  
+  
+  <footer>
+      <div class="footer-content">
+	    <h3>Indian Rail Reservation System </h3>
+		<p>SAFETY AND SECURITY IS OUR TOP-MOST PRIORITY</p>
+		<ul class="socials">
+		      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" ></i></a></li>
+			  <li><a href="https://www.twitter.com/"><i class="fa fa-twitter" ></i></a></li>
+			  <li><a href="https://www.google.com/"><i class="fa fa-google-plus" ></i></a></li>
+			  <li><a href="https://www.youtube.com/"><i class="fa fa-youtube" ></i></a></li>
+			  <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" ></i></a></li>
+		</ul>  
+	   </div>
+	  <div class="footer-bottom">
+        <p>copyright &copy;2021 Indian Rail Reservation System. designed by <span><B>Rudra Pratap Singh</B><span></p> 	  
+      </div>
+	  
+  
+  
+  </footer>	   
+  
+  
+  
+  
+
+   
+		
+	
+</html>
